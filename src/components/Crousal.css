@@ -1,0 +1,103 @@
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    background-color: #f8f9fa;
+    overflow: hidden;
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+  }
+  
+  .carousel-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+  
+  .carousel-card {
+    display: flex;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    min-width: 100%;
+    flex-direction: row;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  
+  .carousel-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 200px;
+  }
+  
+  .carousel-content {
+    padding: 1.5rem;
+    background-color: #195c4c;
+    color: white;
+    flex: 1;
+    position: relative;
+  }
+  
+  .carousel-content h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .quote-mark {
+    font-size: 4rem;
+    color: #58bfa5;
+    position: absolute;
+    top: -3.5rem;
+    right: 1.5rem;
+  }
+  
+  .testimonial-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+  }
+  
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 0.5rem;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #195c4c;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .carousel-card {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .carousel-image img {
+      max-width: 100%;
+    }
+  
+    .carousel-content {
+      text-align: center;
+    }
+  
+    .quote-mark {
+        top: -4rem;
+      right: 1rem;
+    }
+  }
+  

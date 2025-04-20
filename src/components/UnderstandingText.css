@@ -1,0 +1,111 @@
+
+  
+.understanding-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 40px 0 60px; 
+    background-color: #F5F5F5;
+}
+
+.WE {
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: flex;
+    gap: 4px;
+    padding-right: 40px; 
+    align-items: center;
+    text-align: right;
+}
+
+.WE .outlined {
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(11, 1, 1);
+    letter-spacing: 2px;
+    padding-right: 40px;   
+}
+
+.WE .filled {
+    color: rgb(7, 0, 0);
+    -webkit-text-stroke: 0;
+}
+
+.understanding-container {
+    display: flex;
+    gap: 32px;
+    padding: 40px 20px;
+    justify-content: center;
+    background-color: #f9f9f9;
+    background-color: #F5F5F5;
+}
+
+.understanding-column {
+    flex: 1;
+    max-width: 300px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #333333;
+    text-align: left;
+}
+
+.success-button {
+    margin-top: 20px;
+    padding: 10px 16px;
+    border: 2px solid #2ecc71;
+    background: transparent;
+    color: #2ecc71;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.success-button:hover {
+    background-color: #2ecc71;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .understanding-text {
+      justify-content: center;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .WE {
+      font-size: 28px;
+      justify-content: center;
+      padding: 0;
+      text-align: center;
+    }
+  
+    .WE .outlined {
+      padding: 0;
+      -webkit-text-stroke: 1px black;
+    }
+  
+    .understanding-container {
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+    }
+  
+    .understanding-column {
+      max-width: 100%;
+      font-size: 15px;
+      line-height: 26px;
+    }
+  
+    .success-button {
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+  

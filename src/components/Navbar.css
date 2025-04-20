@@ -1,0 +1,453 @@
+/* Import Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f5f5;
+}
+
+.main-container {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background: #004d40;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #d3f6ec;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 1px;
+}
+
+.logo .highlight {
+    font-weight: 700;
+}
+
+.GetAN {
+    font-size: 64px;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.GetAN .outlined {
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    letter-spacing: 4px;
+}
+
+.GetAN .filled {
+    color: white;
+    -webkit-text-stroke: 0;
+}
+
+.curve {
+    width: 20px;
+    height: 40px;
+    border: 4px solid #d3f6ec;
+    border-right: none;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    margin-right: 4px;
+}
+
+.navbar {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.navbar span {
+    font-weight: bold;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar a,
+.navbar .call-now {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: font-weight 0.3s ease;
+    color: white;
+}
+
+.navbar a:hover,
+.navbar .call-now:hover {
+    font-weight: 400;
+}
+
+.navbar .call-now span {
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.navbar .call-now strong {
+    color: #5BC8AF;
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+.hero-section {
+    background: url('../img/background.svg') center/cover no-repeat;
+    background-color: #0b4037;
+    color: white;
+    display: flex;
+    padding: 60px 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left-content {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.left-content h1 {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.left-content .bold {
+    font-weight: 800;
+}
+
+.left-content p {
+    font-size: 14px;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.right-form {
+    background: rgba(0, 150, 136, 0.95);
+    padding: 25px 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.right-form h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input,
+select {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    padding: 12px;
+    background: #00796b;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #004d40;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+
+    /* Adjust navbar for mobile */
+    .navbar {
+
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar nav {
+        display: none;
+        /* Initially hide the menu */
+        width: 100%;
+
+        gap: 15px;
+        text-align: left;
+    }
+
+    .navbar.active nav {
+        display: flex;
+        /* Show menu when navbar has "active" class */
+    }
+
+    .navbar .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+        padding: 5px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    /* Right section adjustments */
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .left-content h1 {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+
+    .left-content p {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    .right-form {
+        margin-top: 30px;
+        width: 100%;
+        max-width: 95%;
+        padding: 20px;
+        border-radius: 12px;
+        background: linear-gradient(180deg, #15796b, #1abc9c);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .right-form h2 {
+        font-size: 18px;
+        margin-bottom: 16px;
+        font-weight: bold;
+    }
+
+
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.navbar.active .hamburger {
+    display: block;
+}
+
+/* New CSS for Side Panel */
+.side-panel {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #004d40;
+    transition: left 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    z-index: 1000;
+    color: white;
+}
+
+.side-panel.active {
+    left: 0;
+}
+
+.side-panel a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 15px 0;
+    color: white;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.side-panel a:hover {
+    color: #5BC8AF;
+}
+
+.side-panel .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .curve {
+        width: 20px;
+        height: 40px;
+        border: 4px solid #d3f6ec;
+        border-right: none;
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+        margin-right: 4px;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+        padding: 5px;
+    }
+
+    .navbar nav {
+        display: none;
+        width: 100%;
+
+        gap: 15px;
+        text-align: left;
+    }
+
+    .navbar.active nav {
+        display: flex;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .GetAN {
+        font-size: 36px;
+        font-weight: 800;
+        text-transform: uppercase;
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .GetAN .outlined {
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+        letter-spacing: 2px;
+    }
+
+    .GetAN .filled {
+        color: white;
+        -webkit-text-stroke: 0;
+    }
+
+
+    /* form */
+    .right-form {
+        padding: 20px 15px;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .right-form h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    input,
+    select {
+        padding: 12px 14px;
+        font-size: 14px;
+        border-radius: 6px;
+        border: none;
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+        padding: 14px;
+        font-size: 16px;
+        background: #7EE0BF;
+        font-weight: bold;
+        border: none;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        gap: 6px;
+    }
+
+    button::before {
+        font-size: 14px;
+        color: white;
+        display: inline-block;
+        transform: translateY(1px);
+    }
+}
